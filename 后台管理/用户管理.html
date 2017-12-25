@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initical-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/yhgl.css" />
+	
+			
+		
+	</head>
+	<body>
+		<nav class="navbar head" role="navigation" id="nav">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand logo" href="#">后台管理</a>
+						<button class="navbar-toggle aa" data-toggle="collapse" data-target="#navbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar">
+						<ul class="nav navbar-nav"> 
+							<li><a href="index.html" ><i class="glyphicon glyphicon-home"></i>后台管理</a></li>
+							<li  class="active"><a href="用户管理.html" ><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
+							<li><a href="内容管理.html"><i class="glyphicon glyphicon-list-alt"></i>内容管理</a></li>
+							<li><a href="标签管理.html"><i class="glyphicon glyphicon-tags"></i>标签管理</a></li>
+						</ul>
+						<ul class="navbar-nav nav navbar-right">
+							<li class="dropdown">
+								<a href="" class="dropdown-toggle" data-toggle="dropdown">
+									admin<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href=""><i class="glyphicon glyphicon-screenshot"></i>前台管理</a></li>
+									<li><a href=""><i class="glyphicon glyphicon-cog"></i>个人主页</a></li>
+									<li><a href=""><i class="glyphicon glyphicon-screenshot"></i>个人设置</a></li>
+									<li><a href=""><i class="glyphicon glyphicon-credit-card"></i>账户中心</a></li>
+									<li><a href=""><i class="glyphicon glyphicon-heart"></i>我的收藏</a></li>
+								</ul>
+							</li>
+							<li><a><i class="glyphicon glyphicon-off"></i>退出</a></li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+		</nav>
+		
+		<div class="main clearfix">
+			<div class="col-md-1"></div>
+			<div class="col-md-2">
+				<ul class="left nav">
+					<li  class="active"><a href="#">用户管理</a></li>
+					<li><a href="#">用户搜索</a></li>
+					<li class="nor" data-toggle='modal' data-target='#login'><a href="#">添加用户</a></li>
+				</ul>
+			</div>
+			<div class="col-md-8">
+				
+				<h2 class='page-header'>用户管理</h2>
+					
+					<ul class='nav nav-tabs'>
+						<li class="active"><a href="#lb"  data-toggle='tab'>用户列表</a></li>
+						<li><a href="#search"  data-toggle='tab'>用户搜索</a></li>
+						<li data-toggle='modal' data-target='#login'><a href="#aq"  data-toggle='tab'>添加用户</a></li>
+						
+					</ul>
+					
+					<!--模态框-->
+					<div class='modal' id='login'>
+						<div class='modal-dialog'>
+							<div class='modal-content'>
+								<div class='modal-header'>
+									<button class='close' data-dismiss='modal'>&times;</button>
+									<h3 class='modal-title'>添加用户</h3>
+								</div>
+								<div class='modal-body'>
+									<form action="" role='form'>
+										<div class='form-group has-success'>
+											<label for='Name'>用户名</label>
+											<input type="text" placeholder="请输入用户名"  id='Name' class='form-control has-success'/>
+										</div>
+										<div class='form-group has-warning'>
+											<label for='pwd'>用户密码</label>
+											<input type="password" placeholder="请输入用户密码"  id='pwd' class='form-control '/>
+										</div>
+										<div class='form-group has-warning'>
+											<label for='pwd'>确认用户密码</label>
+											<input type="password" placeholder="请确认输入用户密码"  id='pwd' class='form-control '/>
+										</div>
+										<div class='form-group '>
+											<label for='emai'>请输入用户邮箱</label>
+											<input type="email" placeholder="请输入用户邮箱"  id='emai' class='form-control '/>
+										</div>
+										
+										<div class='form-group '>
+											<label for='group'>所属用户组</label>
+											<select  class="form-control" id='select'>
+												<option value="">限制会员</option>
+												<option value="">新手上路</option>
+												<option value="">组册会员</option>
+												<option value="">中级会员</option>
+												<option value="">高级会员</option>
+											</select>
+										</div>
+									</form>
+								</div>
+							
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="tab-content">
+						<div class="tab-pane active" id='lb'>
+							<table class="table">
+								<thead >
+									<tr >
+										<th class="th">ID</th>
+										<th class="th">用户名</th>
+										<th class="th">邮箱</th>
+										<th class="th">操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr >
+										<td class="th">1</td>
+										<td>张三</td>
+										<td>400@qq.com</td>
+										<td class="dropdown">
+											<button class='btn btn-default' data-toggle='dropdown'>
+												操作<span class='caret'></span>
+											</button>
+											<ul class="dropdown-menu">
+													<li><a href="#">编辑</a></li>
+													<li><a href="#">删除</a></li>
+													<li><a href="#">锁定</a></li>
+													<li><a href="#">修改内容</a></li>
+											</ul>
+										</td>
+									</tr>
+									<tr >
+										<td class="th">2</td>
+										<td>张三</td>
+										<td>400@qq.com</td>
+										<td class="dropdown">
+											<button class='btn btn-default' data-toggle='dropdown'>
+												操作<span class='caret'></span>
+											</button>
+											<ul class="dropdown-menu">
+												<li><a href="#">编辑</a></li>
+													<li><a href="#">删除</a></li>
+													<li><a href="#">锁定</a></li>
+													<li><a href="#">修改内容</a></li>
+											</ul>
+										</td>
+									</tr>
+									<tr >
+										<td class="th">3</td>
+										<td>张三</td>
+										<td>400@qq.com</td>
+										<td class="dropdown">
+											<button class='btn btn-default' data-toggle='dropdown'>
+												操作<span class='caret'></span>
+											</button>
+											<ul class="dropdown-menu">
+												<li><a href="#">编辑</a></li>
+													<li><a href="#">删除</a></li>
+													<li><a href="#">锁定</a></li>
+													<li><a href="#">修改内容</a></li>
+											</ul>
+										</td>
+									</tr>
+									<tr >
+										<td class="th">4</td>
+										<td>张三</td>
+										<td>400@qq.com</td>
+										<td class="dropdown">
+											<button class='btn btn-default' data-toggle='dropdown'>
+												操作<span class='caret'></span>
+											</button>
+											<ul class="dropdown-menu">
+												<li><a href="#">编辑</a></li>
+													<li><a href="#">删除</a></li>
+													<li><a href="#">锁定</a></li>
+													<li><a href="#">修改内容</a></li>
+											</ul>
+										</td>
+									</tr>
+									<tr >
+										<td class="th">5</td>
+										<td>张三</td>
+										<td>400@qq.com</td>
+										<td class="dropdown">
+											<button class='btn btn-default' data-toggle='dropdown'>
+												操作<span class='caret'></span>
+											</button>
+											<ul class="dropdown-menu">
+												<li><a href="#">编辑</a></li>
+													<li><a href="#">删除</a></li>
+													<li><a href="#">锁定</a></li>
+													<li><a href="#">修改内容</a></li>
+											</ul>
+										</td>
+									</tr>
+									<tr >
+										<td class="th">6</td>
+										<td>张三</td>
+										<td>400@qq.com</td>
+										<td class="dropdown">
+											<button class='btn btn-default' data-toggle='dropdown'>
+												操作<span class='caret'></span>
+											</button>
+											<ul class="dropdown-menu">
+												<li><a href="#">编辑</a></li>
+													<li><a href="#">删除</a></li>
+													<li><a href="#">锁定</a></li>
+													<li><a href="#">修改内容</a></li>
+											</ul>
+										</td>
+									</tr>
+									<tr >
+										<td class="th">7</td>
+										<td>张三</td>
+										<td>400@qq.com</td>
+										<td class="dropdown">
+											<button class='btn btn-default' data-toggle='dropdown'>
+												操作<span class='caret'></span>
+											</button>
+											<ul class="dropdown-menu">
+												<li><a href="#">编辑</a></li>
+													<li><a href="#">删除</a></li>
+													<li><a href="#">锁定</a></li>
+													<li><a href="#">修改内容</a></li>
+											</ul>
+										</td>
+									</tr>
+									<tr >
+										<td class="th">8</td>
+										<td>张三</td>
+										<td>400@qq.com</td>
+										<td class="dropdown">
+											<button class='btn btn-default' data-toggle='dropdown'>
+												操作<span class='caret'></span>
+											</button>
+											<ul class="dropdown-menu">
+												<li><a href="#">编辑</a></li>
+													<li><a href="#">删除</a></li>
+													<li><a href="#">锁定</a></li>
+													<li><a href="#">修改内容</a></li>
+											</ul>
+										</td>
+									</tr>
+									<tr >
+										<td class="th">9</td>
+										<td>张三</td>
+										<td>400@qq.com</td>
+										<td class="dropdown">
+											<button class='btn btn-default' data-toggle='dropdown'>
+												操作<span class='caret'></span>
+											</button>
+											<ul class="dropdown-menu">
+												<li><a href="#">编辑</a></li>
+													<li><a href="#">删除</a></li>
+													<li><a href="#">锁定</a></li>
+													<li><a href="#">修改内容</a></li>
+											</ul>
+										</td>
+									</tr>
+									<tr >
+										<td class="th">10</td>
+										<td>张三</td>
+										<td>400@qq.com</td>
+										<td class="dropdown">
+											<button class='btn btn-default' data-toggle='dropdown'>
+												操作<span class='caret'></span>
+											</button>
+											<ul class="dropdown-menu">
+												<li><a href="#">编辑</a></li>
+													<li><a href="#">删除</a></li>
+													<li><a href="#">锁定</a></li>
+													<li><a href="#">修改内容</a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>			
+							</table>
+							
+							
+								<ul class='pagination  fenye' id='page'>
+									<li><a href="">上一页</a></li>
+									<li><a href="">&laquo;</a></li>
+									<li><a href="">1</a></li>
+									<li><a href="">2</a></li>
+									<li><a href="">3</a></li>
+									<li><a href="">4</a></li>
+									<li><a href="">5</a></li>
+									<li><a href="">6</a></li>
+									<li><a href="">&raquo;</a></li>
+									<li><a href="">下一页</a></li>
+								</ul>
+								
+							
+						</div>
+						
+						<div class="tab-pane  tcontent" id='search'>
+							<div class='alert alert-info'>系统运行稳定</div>
+							<form action="" class="clearfix" role='form'>
+								<div class='form-group '>
+									<label for='Name'>用户名：</label>
+									<input type="text" placeholder="请输入用户名"  id='Name' class='form-control has-success'/>
+								</div>
+								<div class='form-group '>
+									<label for='uid'>UID：</label>
+									<input type="text" placeholder="请输入用户UID"  id='uid' class='form-control '/>
+								</div>
+								<div class='form-group '>
+									<label for='uid'>选择用户组：</label>
+									<select  class="form-control" id='select'>
+												<option value="">限制会员</option>
+												<option value="">新手上路</option>
+												<option value="">组册会员</option>
+												<option value="">中级会员</option>
+												<option value="">高级会员</option>
+									</select>
+								</div>
+								<div class='form-group  '>
+									
+									<button  type="submit" class="btn  btn-info ">提交</button>
+									
+								</div>	
+									
+							</form>
+							
+						</div>
+						<div class="tab-pane " id='aq'></div>
+				
+			</div>
+			<div class="col-md-1"></div>
+			
+		</div>
+		
+		<footer class="col-md-12 ">
+			Copyright &copy 2004-2014 ICP备XXXXXXXX号 
+		</footer>
+		
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+	</body>
+</html>

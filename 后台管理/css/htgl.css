@@ -1,0 +1,114 @@
+*{
+				list-style: none;
+			}
+			
+			nav.head{
+				background: #f8f8f8;
+				border-bottom: 1px solid #e7e7e7;
+			}
+			nav.head ul li a,.logo{
+				color: #777;
+			}
+			nav.head ul li:hover,nav.head ul li.active{
+				background: #e7e7e7;
+			}
+			nav.head ul li a:hover,nav.head ul li.active a{
+				color: #555;
+			}
+			ul li a i{
+				margin: 0px 6px;
+			}
+			
+			
+			
+			table {
+				border: 1px solid #ddd;
+			}
+			table caption{
+				border: 1px solid #ddd;
+				border-top-left-radius:5px;
+				border-top-right-radius:5px;
+				border-bottom: none;
+				background: #f5f5f5;
+				padding-left: 8px;
+			}
+			
+			table.table01 th.th,table.table01 td.th{
+				font-weight: bold;
+			}
+			table.table02 td a{
+				color: #337ab7;
+			}
+			table.table02 td.time{
+				font-size: 12px;
+				color: #337ab7;
+			}
+			
+			
+			
+			div.team ,div.teamlianxi{
+				height: 100%;
+				width: 100%;
+				padding: 0;
+				padding-bottom: 36px;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				
+			}
+			div.team h4,div.teamlianxi h4{
+				margin: 0;
+				font-size: 14px;
+				line-height: 1.42857143;
+				background: #f5f5f5;
+				border-bottom: 1px solid #ddd;
+				padding-top: 8px;
+				padding-bottom: 8px;
+				color: #777;
+			}
+			div.team div.aa{
+				background: #f5f5f5;
+				border:solid 1px #dddddd;
+				border-radius: 5px;
+				height: 100%;
+				padding: 10px 0 20px 10px;
+				margin-top: 16px;
+			}
+			div.team div.bb{
+				background: #f5f5f5;
+				border:solid 1px #dddddd;
+				border-radius: 5px;
+				height: 100%;
+				padding: 10px 20px 10px 0px;
+				margin-top: 16px;
+			}
+			div.team div.aa img,div.team div.aa p{
+				float: left;
+			}
+			div.team div.bb img,div.team div.bb p{
+				float: right;
+				text-align: right;
+			}
+			div.team  p.name{
+				margin-top: 30px;
+			}
+			
+			/*div.team  p.name{
+				font-weight: bold;
+				font-size: 16px;
+				
+			}*/
+			
+			button.liuyan{
+				margin: 16px 0;
+				background: #fff;
+				border: 1px solid #D4D4D4;
+			}
+			
+			div.teamlianxi ul{
+				margin: 20px 20px 20px 0px;
+			}
+			div.teamlianxi ul li{
+				padding-left: 14px;
+				line-height: 40px;
+				border: 1px solid #ddd;
+			}

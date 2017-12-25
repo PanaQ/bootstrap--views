@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initical-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/htgl.css" />
+	</head>
+	<body>
+		<nav class="navbar head" role="navigation" id="nav">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand logo" href="#">后台管理</a>
+						<button class="navbar-toggle aa" data-toggle="collapse" data-target="#navbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar">
+						<ul class="nav navbar-nav"> 
+							<li class="active"><a href="index.html" ><i class="glyphicon glyphicon-home"></i>后台管理</a></li>
+							<li><a href="用户管理.html" ><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
+							<li><a href="内容管理.html"><i class="glyphicon glyphicon-list-alt"></i>内容管理</a></li>
+							<li><a href="标签管理.html"><i class="glyphicon glyphicon-tags"></i>标签管理</a></li>
+						</ul>
+						<ul class="navbar-nav nav navbar-right">
+							<li class="dropdown">
+								<a href="" class="dropdown-toggle" data-toggle="dropdown">
+									admin<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href=""><i class="glyphicon glyphicon-screenshot"></i>前台管理</a></li>
+									<li><a href=""><i class="glyphicon glyphicon-cog"></i>个人主页</a></li>
+									<li><a href=""><i class="glyphicon glyphicon-screenshot"></i>个人设置</a></li>
+									<li><a href=""><i class="glyphicon glyphicon-credit-card"></i>账户中心</a></li>
+									<li><a href=""><i class="glyphicon glyphicon-heart"></i>我的收藏</a></li>
+								</ul>
+							</li>
+							<li><a><i class="glyphicon glyphicon-off"></i>退出</a></li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+		</nav>
+		
+		<div class="main">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<!--前俩个表格-->
+				<div class="col-md-6">
+					<table class="table table01 ">
+						<caption>网站数据统计表</caption>
+						<thead >
+							<tr >
+								<th class="th">统计项目</th>
+								<th class="th">今日</th>
+								<th class="th">昨日</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr >
+								<td class="th">注册会员</td>
+								<td>200</td>
+								<td>400</td>
+							</tr>
+							<tr >
+								<td class="th">登录会员</td>
+								<td>4100</td>
+								<td>5112</td>
+							</tr>
+							<tr >
+								<td class="th">今日发帖</td>
+								<td>1540</td>
+								<td>4511</td>
+							</tr>
+							<tr >
+								<td class="th">转载次数</td>
+								<td>150</td>
+								<td>110</td>
+							</tr>
+						</tbody>			
+					</table>
+				</div>
+				
+				<div class="col-md-6">
+					<table class="table table02">
+						<caption>网站热帖</caption>
+						<tbody>
+							<tr>
+								<td ><a href="#" class="text-left"><i class="glyphicon glyphicon-list-alt"></i>
+									泛Mooc职业教育，效果和就业为王</a>
+								</td>
+								<td class="text-right time">2015/08/08</td>
+							</tr>
+							<tr>
+								<td><a href="#"><i class="glyphicon glyphicon-list-alt"></i>
+									泛Mooc职业教育，效果和就业为王</a>
+								</td>
+								<td class="text-right time">2015/08/08</td>
+							</tr>
+							<tr>
+								<td><a href="#"><i class="glyphicon glyphicon-list-alt"></i>
+									泛Mooc职业教育，效果和就业为王</a>
+								</td>
+								<td class="text-right time">2015/08/08</td>
+							</tr>
+							<tr>
+								<td><a href="#"><i class="glyphicon glyphicon-list-alt"></i>
+									泛Mooc职业教育，效果和就业为王</a>
+								</td>
+								<td class="text-right time">2015/08/08</td>
+							</tr>
+							<tr>
+								<td><a href="#"><i class="glyphicon glyphicon-list-alt"></i>
+									泛Mooc职业教育，效果和就业为王</a>
+								</td>
+								<td class="text-right time">2015/08/08</td>
+							</tr>
+							<tr>
+								<td><a href="#"><i class="glyphicon glyphicon-list-alt"></i>
+									泛Mooc职业教育，效果和就业为王</a>
+								<td class="text-right time">2015/08/08</td></td>
+							</tr>
+						</tbody>			
+					</table>
+				</div>
+			
+				<!--第二行的两个表格-->
+				<div class="col-md-6">
+					<table class="table table03 ">
+						<caption>今日访客统计</caption>
+						<tbody>
+							<tr>
+								<td>
+									<img src="img/data.png" class="img-responsive" />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="col-md-6">
+					<table class="table table04">
+						<caption>服务器状态</caption>
+						<tbody>
+							<tr>
+								<td>
+									<label for="hc" >内存使用率：40%</label>
+									<div class='progress progress-striped' id='hc'>
+										<div class='progress-bar progress-bar-info'  role='progressbar' style='width:40%;'></div>
+									</div>
+									<label for="c" >数据库使用率：20%</label>
+									<div class='progress progress-striped' id='c'>
+										<div class='progress-bar progress-bar-success'  role='progressbar' style='width:20%;'></div>
+									</div>
+									<label for="b" >磁盘使用率：60%</label>
+									<div class='progress progress-striped' id='b'>
+										<div class='progress-bar progress-bar-warning'  role='progressbar' style='width:60%;'></div>
+									</div>
+									<label for="hc" >CPU使用率：80%</label>
+									<div class='progress progress-striped' id='g'>
+										<div class='progress-bar progress-bar-danger'  role='progressbar' style='width:80%;'></div>
+									</div>	
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+					
+				<!--第3行的表格-->
+				<div class="col-md-12 ">
+					<div class="container team">
+						<h4 class="col-md-12">团队留言板</h4>
+						<div class="col-md-7 left ">
+							
+							
+							<div class="aa clearfix">
+								<img src="img/a.png"  />
+								<p class="name">
+									<strong>桌大哥</strong><br />
+									技术大哥，今晚请把网站程序升级一下哈，现在的系统有漏洞，安全起见。</p>
+							</div>
+							
+							<div class="bb clearfix">
+								<img src="img/b.png"  />
+								<p class="name">
+									<strong>技术大哥</strong><br />
+									收到，今夜凌晨2点准时升级！
+							</div>
+								<div class="bb clearfix">
+								<img src="img/b.png"  />
+								<p class="name">
+									<strong>技术大哥</strong><br />
+									你先技术站点发布一下通知。
+							</div>
+								<div class="aa clearfix">
+								<img src="img/a.png"  />
+								<p class="name">
+									<strong>桌大哥</strong><br />
+									好的。
+							</div>
+					
+							
+						</div>
+							
+						<div class="col-md-5">
+							<form>
+								<h5>请输入留言内容</h5>
+								<textarea placeholder="请输入留言内容" rows="8" class="col-md-12"></textarea>
+								<button class="btn btn-xs liuyan">留言</button>
+							</form>
+							
+							<div class="teamlianxi">
+								<h4>团队联系手册</h4>
+								<ul >
+									<li>站长（李小龙）：<i class="glyphicon glyphicon-phone"></i>1313487814</li>
+									<li>站长（李小龙）：<i class="glyphicon glyphicon-phone"></i>1313487814</li>
+									<li>站长（李小龙）：<i class="glyphicon glyphicon-phone"></i>1313487814</li>
+									<li>站长（李小龙）：<i class="glyphicon glyphicon-phone"></i>1313487814</li>
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+		
+		
+		
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+	</body>
+</html>
